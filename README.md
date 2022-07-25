@@ -56,4 +56,4 @@ NOTE: See profanityclient.js for example calls to the microservice.
 
 # UML Sequence Diagram: 
 
-![Profanity Checker Sequence Diagram (1)](https://user-images.githubusercontent.com/73244447/180698828-6b034150-a7b9-4045-ae61-cfe5f52cccc8.png)
+![Profanity Checker Sequence Diagram (3)](https://user-images.githubusercontent.com/73244447/180698896-ab1eff16-e951-44d3-b1e4-5795a196c1d4.png)
