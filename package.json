@@ -1,0 +1,24 @@
+{
+  "name": "profanity-checker-zeromq-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "profanityserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-petes/profanity-checker-zeromq-microservice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r-petes/profanity-checker-zeromq-microservice/issues"
+  },
+  "homepage": "https://github.com/r-petes/profanity-checker-zeromq-microservice#readme",
+  "dependencies": {
+    "pkg-config": "^1.1.1",
+    "profanity-js": "^0.1.4",
+    "zeromq": "^5.2.8"
+  }
+}
