@@ -52,4 +52,8 @@ process.on('SIGINT', function() {
   requester.close();
 });
 
-* See profanityclient.js for example calls to the microservice. 
+NOTE: See profanityclient.js for example calls to the microservice. 
+
+# UML Sequence Diagram: 
+
+![Profanity Checker Sequence Diagram](https://user-images.githubusercontent.com/73244447/180698775-3858b971-6bfc-4ab1-9977-898825a35f36.png)
