@@ -24,7 +24,7 @@
 
 var zmq = require('zeromq');
 
-- Sending a request by creating a requester, connecting to the host, and sending your data: 
+## Sending a request by creating a requester, connecting to the host, and sending your data: 
 
 var requester = zmq.socket('req');
 
@@ -33,7 +33,7 @@ requester.connect("tcp://localhost:5555");
 requester.send("stringtovalidate");
 
 
-- Response handling: 
+## Response handling: 
 
 requester.on("message", function(reply) {
 
@@ -46,10 +46,14 @@ requester.on("message", function(reply) {
 });
 
 
-- Close process
+## Close process
 
 process.on('SIGINT', function() {
   requester.close();
 });
 
-* See profanityclient.js for example calls to the microservice. 
+NOTE: See profanityclient.js for example calls to the microservice. 
+
+# UML Sequence Diagram: 
+
+![Profanity Checker Sequence Diagram (3)](https://user-images.githubusercontent.com/73244447/180698896-ab1eff16-e951-44d3-b1e4-5795a196c1d4.png)
