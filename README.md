@@ -24,7 +24,7 @@
 
 var zmq = require('zeromq');
 
-- Sending a request by creating a requester, connecting to the host, and sending your data: 
+## Sending a request by creating a requester, connecting to the host, and sending your data: 
 
 var requester = zmq.socket('req');
 
@@ -33,7 +33,7 @@ requester.connect("tcp://localhost:5555");
 requester.send("stringtovalidate");
 
 
-- Response handling: 
+## Response handling: 
 
 requester.on("message", function(reply) {
 
@@ -46,7 +46,7 @@ requester.on("message", function(reply) {
 });
 
 
-- Close process
+## Close process
 
 process.on('SIGINT', function() {
   requester.close();
