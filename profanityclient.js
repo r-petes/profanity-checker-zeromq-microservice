@@ -9,8 +9,12 @@ var requester = zmq.socket('req');
 
 requester.connect("tcp://localhost:5555");
 
+// Send input to the server to be checked for profanity
+
 requester.send("hell");
 requester.send("hello");
+
+// Receive back the output from the server and do something with that output
 
 requester.on("message", function(reply) {
   if (reply  == 0) {

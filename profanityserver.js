@@ -14,7 +14,11 @@ var zmq = require('zeromq');
 
 var responder = zmq.socket('rep');
 
+// Receives requests from client 
+
 responder.on('message', function(request) {  
+
+  // Creates a profanity instance
 
   const profanity = new Profanity("", {
     language: 'en-us',
@@ -22,6 +26,7 @@ responder.on('message', function(request) {
 
   let input = request.toString()
 
+  // Checks if the client's input is profane, if so return a 1. If not, return a 0. 
 
     if(profanity.isProfane(input) == true) {
       responder.send(1);
